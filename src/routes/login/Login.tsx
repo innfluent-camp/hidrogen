@@ -1,19 +1,19 @@
 import { Button, Center, Spacer, VStack } from "@chakra-ui/react";
-import { Logotype } from "components/brand/Logotype";
+import { Logotype } from "components/brand";
 import { TextField } from "components/forms";
 
 const Login = () => {
   return (
-    <Center>
-      <VStack>
-        <Logotype />
+    <Center p="10" h="100vh">
+      <VStack alignItems="stretch" width="md" gap="2">
+        <Logotype height="60px" width="100%" />
         <Spacer />
         <TextField
           name="email"
           label="Correo electrónico"
           helperText="Ingresa tu correo electronico"
         />
-        <Button> Ingresar </Button>
+        <Button colorScheme="messenger"> Ingresar </Button>
       </VStack>
     </Center>
   );
