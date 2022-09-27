@@ -4,7 +4,7 @@ import {
   FormHelperText,
   FormLabel,
   Input,
-} from "@chakra-ui/react";
+} from '@chakra-ui/react';
 
 type TextFieldProps = {
   value?: string;
@@ -17,7 +17,7 @@ type TextFieldProps = {
 };
 
 export const TextField = ({
-  value = "",
+  value = '',
   name,
   label,
   helperText,

@@ -1,6 +1,6 @@
-import { Button, Center, Spacer, VStack } from "@chakra-ui/react";
-import { Logotype } from "components/brand";
-import { TextField } from "components/forms";
+import { Button, Center, Spacer, VStack } from '@chakra-ui/react';
+import { Logotype } from 'components/brand';
+import { TextField } from 'components/forms';
 
 const Login = () => {
   return (
