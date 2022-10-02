@@ -1,12 +1,12 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Login from 'routes/login';
-import Dashboard from './dashboard';
+import Home from './home';
 
 export const Router = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Dashboard />} />
+        <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
       </Routes>
     </BrowserRouter>

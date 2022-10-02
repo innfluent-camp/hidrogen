@@ -29,7 +29,7 @@ const Login = () => {
   return (
     <Center p="10" h="100vh">
       <VStack alignItems="stretch" width="md" gap="2">
-        <Logotype height="60px" width="100%" />
+        <Logotype height="40px" />
         <Spacer />
         <TextField
           name="email"
