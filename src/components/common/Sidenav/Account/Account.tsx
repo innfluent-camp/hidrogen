@@ -6,7 +6,7 @@ export const Account = () => {
   const email = 'foo@bar.io';
 
   return (
-    <Flex gap="3" align="center">
+    <Flex gap="3" align="center" justifySelf="flex-end">
       <Image src={profilePictureSrc} boxSize="12" borderRadius="full" />
 
       <Flex fontSize="small" direction="column">

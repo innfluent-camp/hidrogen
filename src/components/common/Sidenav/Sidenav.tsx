@@ -1,11 +1,12 @@
-import { Box, Flex } from '@chakra-ui/react';
+import { Box, Flex, HStack, Spacer } from '@chakra-ui/react';
+import { AcademicCapIcon, BeakerIcon, HomeIcon } from 'assets/icons';
 import { Logotype } from 'components/brand';
 import { Account } from './Account';
 import { SidenavLink } from './SidenavLink';
 
 export const Sidenav = () => {
   return (
-    <Box
+    <Flex
       position="fixed"
       left="0"
       backgroundColor="gray.50"
@@ -13,13 +14,18 @@ export const Sidenav = () => {
       bottom="0"
       w="300px"
       p="7"
+      direction="column"
     >
-      <Flex direction="column">
-        <Logotype h="8" mb="4" alignSelf="flex-start" />
-        <SidenavLink to="/" label="Home" />
+      <Logotype h="8" mb="10" alignSelf="flex-start" />
 
-        <Account />
+      <Flex direction="column" gap="3" mb="auto">
+        <SidenavLink to="/" label="Home" icon={HomeIcon} />
+        <SidenavLink to="/cursos" label="Cursos" icon={AcademicCapIcon} />
+        <SidenavLink to="/proyectos" label="Proyectos" icon={BeakerIcon} />
       </Flex>
-    </Box>
+
+      <Spacer />
+      <Account />
+    </Flex>
   );
 };
